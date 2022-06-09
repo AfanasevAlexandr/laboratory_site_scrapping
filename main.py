@@ -10,8 +10,8 @@ def collect_data():
 
     response = requests.get(url='https://lifetime.plus/api/analysis2')
 
-    # with open(f'info_{t_date}.json', 'w') as file:
-    #    json.dump(response.json(), file, indent=4, ensure_ascii=False)
+    with open(f'info_{t_date}.json', 'w') as file:
+        json.dump(response.json(), file, indent=4, ensure_ascii=False)
 
     categories = response.json()['categories']
     result = []
