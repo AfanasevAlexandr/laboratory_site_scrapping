@@ -22,7 +22,7 @@ def collect_data():
         for item in c_items:
             item_name = item.get('name').strip()
             item_price = item.get('price')
-            item_desc = item.get('description').strip().replace('α', 'a').replace('γ', 'Y').replace('β', 'B')
+            item_desc = item.get('description').strip().replace('α', 'a').replace('γ', 'Y').replace('β', 'B') # замена гречаских сиволов на латинские
             item_wait_time = item.get('days')
             item_bio = item.get('biomaterial')
 
